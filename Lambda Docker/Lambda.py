@@ -224,8 +224,8 @@ def getImage(bucketName, key):
 
 # get images refrences from database with the names connected with it
 def getRefs(Query):
-	conn = pymysql.connect(host='smartworkplacdb.cp74nciwae5f.me-south-1.rds.amazonaws.com', user='admin',
-	                       database='Smart_Workplace_infrastructure', password='Coe485t211',
+	conn = pymysql.connect(host='', user='',
+	                       database='', password='',
 	                       cursorclass=pymysql.cursors.DictCursor)
 	with conn.cursor() as cur:
 		cur.execute(Query)
